@@ -1,0 +1,89 @@
+$color: rgb(0, 201, 141);
+.list-wrap{
+  /* S tab切换样式 */
+  .tab-wrap{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+    .tab-item{
+      width: 50%;
+      line-height: 86px;
+      text-align: center;
+      transition: all .3s;
+      border-bottom: 4px solid rgba(153,153,153,.3);
+      &.tab-active{
+        border-color: $color;
+        color: $color;
+      }
+    }
+  }
+  /* E tab切换样式 */
+
+  /* S 书籍列表 */
+  .list{
+    padding-left: 32px;
+    margin-top: 90px;
+    .list-item{
+      display: flex;
+      flex-direction: row;
+      padding: 32px 40px 32px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid #f3f3f3;
+      .l-left{
+        width: 112px;
+        height: 148px;
+        image{
+          width: 100%;
+          height: 148px;
+        }
+      }
+      .l-right{
+        width: calc(100% - 112px);
+        padding-left: 32px;
+        box-sizing: border-box;
+        .t-title{
+          font-size: 32px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          display: block;
+        }
+        .l-reads{
+          position: relative;
+          top: 1px;
+          left: 3px;
+        }
+        .l-info{
+          display: flex;
+          justify-content: space-between;
+          font-size: 24px;
+          color: #999;
+          margin: 12px 0 14px 0;
+        }
+        .l-tag{
+          display: flex;
+          .l-text{
+            padding: 0 12px;
+            font-size: 24px;
+            color: #999;
+            border: 2px solid rgba(153,153,153,.3);
+            margin-right: 8px;
+          }
+          .l-lz{
+            color: #499fff;
+          }
+          .l-wj{
+            color: #00c98d;
+          }
+        }
+      }
+    }
+  }
+  // E 书籍列表
+}

@@ -1,0 +1,22 @@
+page{
+  background: #eee;
+  height: 100%;
+  .kind-wrap{
+    padding-top: 10px;
+    .k-list{
+      padding: 40px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      background: #fff;
+      .k-title{
+        font-size: 30px;
+        color: #000;
+        font-weight: 500;
+      }
+      .k-desc{
+        font-size: 28px;
+        color: #333;
+      }
+    }
+  }
+}
