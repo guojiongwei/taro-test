@@ -25,5 +25,7 @@ class Header extends Component {
     )
   }
 }
-Header.propTypes = {}
+Header.propTypes = {
+  onChange: PropTypes.func.isRequired
+}
 export default Header

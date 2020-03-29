@@ -24,6 +24,12 @@ class List extends Component {
     this.params.type = this.$router.params.id
     this.getListData()
   }
+  getChildContext(){
+    return {
+      aaa: 'aaa',
+      bbb: 'bbb'
+    }
+  }
   // 获取初始数据
   getListData = async () => {
     let { data } = await Taro.request({ url: `http://read.xiaoshuo1-sm.com/novel/i.php?do=is_novelrank&p=1&page=${this.params.page}&size=10&onlyCpBooks=1&gender=${this.params.gender}&type=${this.params.type}` })
